@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = "html:target/report.html",
         features = "src/test/resources/features",
         glue = "com/birtrix/stepdefinition",
-        tags = "@wip",
+        tags = "",
         dryRun =false
 
 )

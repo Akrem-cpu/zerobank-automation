@@ -1,0 +1,615 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-02T15:43:20.389Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4333826700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "user should see  Savings, Checking, Loan, Credit Card, Brokerage under account on account activity page",
+        "description": "",
+        "id": "account-activity-page-should-have-the-title-zero-–-account-activity.-in-the-account-drop-down-default-option;user-should-see--savings--checking--loan--credit-card--brokerage-under-account-on-account-activity-page",
+        "after": [
+          {
+            "result": {
+              "duration": 946913700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2286681300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is log in into zero bank account",
+            "match": {
+              "location": "com.birtrix.stepdefinition.AccountSummaryFeature.user_is_log_in_into_zero_bank_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 732011500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on \"Account Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Activity\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.birtrix.stepdefinition.AccountActivityFeature.userClickOn(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128118400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should see title \"Zero - Account Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.birtrix.stepdefinition.AccountSummaryFeature.userShouldSeeTitle(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 519114900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should see \"Savings\" as a by default on account dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.birtrix.stepdefinition.AccountActivityFeature.user_should_see_as_a_by_default_on_account_dropdown(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T15:43:29.373Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4642042900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "user should see all Savings, Checking, Loan, Credit Card, Brokerage option under account select dropdown",
+        "description": "",
+        "id": "account-activity-page-should-have-the-title-zero-–-account-activity.-in-the-account-drop-down-default-option;user-should-see-all-savings--checking--loan--credit-card--brokerage-option-under-account-select-dropdown",
+        "after": [
+          {
+            "result": {
+              "duration": 1245707100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3129501400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user is log in into zero bank account",
+            "match": {
+              "location": "com.birtrix.stepdefinition.AccountSummaryFeature.user_is_log_in_into_zero_bank_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 925671500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on \"Account Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Activity\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.birtrix.stepdefinition.AccountActivityFeature.userClickOn(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 246050000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user click on account dropdown",
+            "match": {
+              "location": "com.birtrix.stepdefinition.AccountActivityFeature.userClickOnAccountDropdown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1517641700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should see under account select dropdown",
+            "match": {
+              "location": "com.birtrix.stepdefinition.AccountActivityFeature.user_should_see_under_account_select_dropdown(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Savings"
+                ]
+              },
+              {
+                "cells": [
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Savings"
+                ]
+              },
+              {
+                "cells": [
+                  "Loan"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit Card"
+                ]
+              },
+              {
+                "cells": [
+                  "Brokerage"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Account Activity page should have the title Zero – Account activity. In the Account drop down default option",
+    "description": "  should be Savings. Account drop down should have the following options: Savings, Checking, Loan, Credit Card, Brokerage.\n  Transactions table should\thave column\tnames Date,\tDescription, Deposit, Withdrawal.",
+    "id": "account-activity-page-should-have-the-title-zero-–-account-activity.-in-the-account-drop-down-default-option",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/accountactivity.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-02T15:43:41.090Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3883087300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "user should see this Cash Accounts, Investment Accounts, Credit\tAccounts, Loan Accounts after user login",
+        "description": "",
+        "id": "account-summary-page-should-have-the-title-zero-–-account-summary.-account;user-should-see-this-cash-accounts--investment-accounts--credit-accounts--loan-accounts-after-user-login",
+        "after": [
+          {
+            "result": {
+              "duration": 364195000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2664981700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is log in into zero bank account",
+            "match": {
+              "location": "com.birtrix.stepdefinition.AccountSummaryFeature.user_is_log_in_into_zero_bank_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 99417000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should see title \"Zero - Account Summary\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Summary\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.birtrix.stepdefinition.AccountSummaryFeature.userShouldSeeTitle(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 293577300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should see",
+            "match": {
+              "location": "com.birtrix.stepdefinition.AccountSummaryFeature.user_should_see(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Cash Accounts"
+                ]
+              },
+              {
+                "cells": [
+                  "Investment Accounts"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit Accounts"
+                ]
+              },
+              {
+                "cells": [
+                  "Loan Accounts"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T15:43:48.399Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4670410900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "user should see this Account, Credit Card and Balance under credit account after user login",
+        "description": "",
+        "id": "account-summary-page-should-have-the-title-zero-–-account-summary.-account;user-should-see-this-account--credit-card-and-balance-under-credit-account-after-user-login",
+        "after": [
+          {
+            "result": {
+              "duration": 317410400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1950562200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is log in into zero bank account",
+            "match": {
+              "location": "com.birtrix.stepdefinition.AccountSummaryFeature.user_is_log_in_into_zero_bank_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 228439500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user should see this under the credit account",
+            "match": {
+              "location": "com.birtrix.stepdefinition.AccountSummaryFeature.user_should_see_this_under_the_credit_account(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Account"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit Card"
+                ]
+              },
+              {
+                "cells": [
+                  "Balance"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Account\tsummary\tpage\tshould\thave\tthe\ttitle\tZero\t– Account\tsummary.\tAccount",
+    "description": "  summary\tpage\tshould\thave\tto\tfollowing\taccount\ttypes:\tCash\tAccounts,\tInvestment\n  Accounts,\tCredit\tAccounts,\tLoan\tAccounts.\tCredit\tAccounts table\tmust\thave\tcolumns\n  Account,\tCredit\tCard and\tBalance.",
+    "id": "account-summary-page-should-have-the-title-zero-–-account-summary.-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/accountsummary.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-02T15:43:55.570Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4053017400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "user login in to zero bank account",
+        "description": "",
+        "id": "only-authorized-users-should-be-able-to-login-to-the-application.-when-user-logs-in;user-login-in-to-zero-bank-account",
+        "after": [
+          {
+            "result": {
+              "duration": 364783400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.birtrix.stepdefinition.LoginFunctionality.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 767814600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user give valid credential",
+            "match": {
+              "location": "com.birtrix.stepdefinition.LoginFunctionality.user_give_valid_credential()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 534871700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on sign in button",
+            "match": {
+              "location": "com.birtrix.stepdefinition.LoginFunctionality.user_click_on_sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1056971900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should see title as \"Zero - Account Summary\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Summary\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.birtrix.stepdefinition.LoginFunctionality.user_should_see_title_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T15:44:02.350Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3905984900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "user login in to zero bank account",
+        "description": "",
+        "id": "only-authorized-users-should-be-able-to-login-to-the-application.-when-user-logs-in;user-login-in-to-zero-bank-account",
+        "after": [
+          {
+            "result": {
+              "duration": 336905600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.birtrix.stepdefinition.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.birtrix.stepdefinition.LoginFunctionality.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 634692800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user give invalid credential",
+            "match": {
+              "location": "com.birtrix.stepdefinition.LoginFunctionality.userGiveInvalidCredential()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 602512100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click on sign in button",
+            "match": {
+              "location": "com.birtrix.stepdefinition.LoginFunctionality.user_click_on_sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 138801400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should see error message that says \"Login and/or password are wrong.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login and/or password are wrong.\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.birtrix.stepdefinition.LoginFunctionality.userShouldSeeErrorMessageThatSays(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Only\tauthorized\tusers\tshould\tbe\table\tto\tlogin\tto\tthe\tapplication.\tWhen\tuser\tlogs in",
+    "description": "  with\tvalid\tcredentials,\tAccount\tsummary\tpage\tshould\tbe\tdisplayed.",
+    "id": "only-authorized-users-should-be-able-to-login-to-the-application.-when-user-logs-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/loginfunctionality.feature",
+    "tags": []
+  }
+]

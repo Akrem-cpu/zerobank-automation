@@ -1,19 +1,21 @@
 package com.birtrix.stepdefinition;
 
 import com.birtrix.utilites.BrowserUitls;
+import com.birtrix.utilites.Driver;
 import com.birtrix.utilites.Pages;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.util.List;
 
 public class AccountActivityFeature {
 
-    @When("user click on account activity")
-    public void user_click_on_account_activity() {
-        BrowserUitls.clickOnOneElementOfTheList(Pages.getAllserivecLink().allLinkOfDiffServierc,"Account Activity");
+    @When("user click on {string}")
+    public void userClickOn(String arg0) {
+        BrowserUitls.clickOnOneElementOfTheList(Pages.getALlPages().listOfAllTabs,arg0);
     }
     @Then("user should see {string} as a by default on account dropdown")
     public void user_should_see_as_a_by_default_on_account_dropdown(String string) {
@@ -33,4 +35,6 @@ public class AccountActivityFeature {
         List<WebElement> ele = BrowserUitls.selectObject(Pages.getAccountActivity().selectDropDownForAccount).getOptions();
        BrowserUitls.assertMultipleText(list,ele);
     }
+
+
 }

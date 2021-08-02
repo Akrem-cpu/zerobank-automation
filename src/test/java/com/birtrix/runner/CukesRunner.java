@@ -7,7 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = "html:target/report.html",
+        plugin = {
+                "html:target/report.html",
+                 "json:target/json.json"
+        },
         features = "src/test/resources/features",
         glue = "com/birtrix/stepdefinition",
         tags = "",
@@ -16,5 +19,5 @@ import org.junit.runner.RunWith;
 )
 
 
-public class CucksRunner {
+public class CukesRunner {
 }

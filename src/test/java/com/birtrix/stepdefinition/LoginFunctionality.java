@@ -16,6 +16,7 @@ public class LoginFunctionality {
     }
     @Then("user give valid credential")
     public void user_give_valid_credential() {
+        Pages.getZero_logn().signinButton.click();
       Zero_logn.validCredential();
     }
     @Then("user click on sign in button")
@@ -38,6 +39,7 @@ public class LoginFunctionality {
 
     @Then("user give invalid credential")
     public void userGiveInvalidCredential() {
+        Pages.getZero_logn().signinButton.click();
         Zero_logn.inValidCredential();
     }
     @Then("user should see error message that says {string}")

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class Zero_logn {
+public class Zero_logn extends ALlPages {
     public Zero_logn(){
         PageFactory.initElements(Driver.getDriver(),this);
     }

@@ -6,15 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Deque;
 import java.util.List;
 
-public class AllSerivecLink {
-    public AllSerivecLink(){
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+public class ALlPages {
+  public ALlPages(){
+      PageFactory.initElements(Driver.getDriver(),this);
+  }
 
-    @FindBy(xpath = "//ul[@class='nav nav-tabs']//li")
-    public List<WebElement> allLinkOfDiffServierc;
+  @FindBy(xpath = "//ul[@class='nav nav-tabs']/li")
+    public List<WebElement> listOfAllTabs;
 
 
 

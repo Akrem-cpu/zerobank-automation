@@ -6,10 +6,17 @@ import com.birtrix.utilites.Pages;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 public class AccountActivityFeature {
 
@@ -21,7 +28,6 @@ public class AccountActivityFeature {
     public void user_should_see_as_a_by_default_on_account_dropdown(String string) {
     String actualDefaultValue=  BrowserUitls.selectObject(Pages.getAccountActivity().selectDropDownForAccount).getFirstSelectedOption().getText();
         Assert.assertEquals(actualDefaultValue,string);
-
 
     }
 

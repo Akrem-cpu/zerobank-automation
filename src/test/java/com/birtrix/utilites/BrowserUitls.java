@@ -20,8 +20,7 @@ public class BrowserUitls {
 
 
     public static WebDriverWait waitFor(){
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-        return wait;
+        return new WebDriverWait(Driver.getDriver(),10);
     }
    public static void sleep(int second ){
         second = second*1000;

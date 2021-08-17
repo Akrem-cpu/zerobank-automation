@@ -1,0 +1,4 @@
+file:src/test/resources/features/accountactivity.feature:13
+file:src/test/resources/features/loginfunctionality.feature:5
+file:src/test/resources/features/NacigatingFuncationality.feature:4
+file:src/test/resources/features/accountsummary.feature:7:16

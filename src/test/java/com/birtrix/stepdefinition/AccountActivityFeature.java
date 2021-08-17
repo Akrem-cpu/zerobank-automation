@@ -1,22 +1,13 @@
 package com.birtrix.stepdefinition;
 
 import com.birtrix.utilites.BrowserUitls;
-import com.birtrix.utilites.Driver;
 import com.birtrix.utilites.Pages;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
-
-import java.time.Duration;
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
+
 
 public class AccountActivityFeature {
 

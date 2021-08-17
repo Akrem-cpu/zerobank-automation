@@ -1,8 +1,6 @@
 package com.birtrix.page;
 
 import com.birtrix.utilites.Driver;
-import com.birtrix.utilites.Pages;
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

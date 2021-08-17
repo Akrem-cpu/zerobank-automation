@@ -1,14 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: Account Activity page should have the title Zero – Account activity. In the Account drop down default option
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 60.669 s <<< FAILURE! - in Account Activity page should have the title Zero – Account activity. In the Account drop down default option
-Account Activity page should have the title Zero – Account activity. In the Account drop down default option.user should see all Savings, Checking, Loan, Credit Card, Brokerage option under account select dropdown  Time elapsed: 35.26 s  <<< ERROR!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 18.486 s <<< FAILURE! - in Account Activity page should have the title Zero – Account activity. In the Account drop down default option
+Account Activity page should have the title Zero – Account activity. In the Account drop down default option.user should see  Savings, Checking, Loan, Credit Card, Brokerage under account on account activity page  Time elapsed: 14.585 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='signin_button']"}
   (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-2IS1V9FB', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\akrem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56334}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bce3197efaa287145f0e1bf1742f8bdf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\akrem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 60ef6ed6a488022e044af385114a7d72
+*** Element info: {Using=xpath, value=//button[@id='signin_button']}
 

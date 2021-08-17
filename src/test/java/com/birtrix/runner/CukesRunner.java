@@ -9,13 +9,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 "html:target/report.html",
-                 "json:target/json.json"
+                 "json:target/json.json",
+                 "rerun:target/rerun.txt"
         },
         features = "src/test/resources/features",
         glue = "com/birtrix/stepdefinition",
-        tags = "",
-        dryRun =false
-
+        tags = "@wip",
+        dryRun = false
 )
 
 

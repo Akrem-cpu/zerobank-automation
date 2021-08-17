@@ -1,0 +1,18 @@
+package com.birtrix.runner;
+
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "@target/rerun.txt",
+        glue = "com/birtrix/stepdefinition"
+
+
+)
+
+
+public class FailedTestRuner {
+}

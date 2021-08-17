@@ -7,7 +7,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class BrowserUitls {
     public static void titleAssert(String title){
@@ -53,6 +56,16 @@ public class BrowserUitls {
   public static Select selectObject(WebElement element){
       return new Select(element);
   }
+
+  public static List<String> changeListOfWebElementToStringList(List<WebElement> list){
+        List<String> answer = new ArrayList<>();
+      for (WebElement each : list) {
+          answer.add(each.getText());
+      }
+
+       return  answer;
+  }
+
 
 
 

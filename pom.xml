@@ -31,14 +31,14 @@
                 <configuration>
                     <parallel>methods</parallel>
                     <threadCount>2</threadCount>
-                    <perCoreThreadCount>true</perCoreThreadCount>
+                    <perCoreThreadCount>false</perCoreThreadCount>
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
                         <include>**/CukesRunner*.java</include>
                     </includes>
                 </configuration>
             </plugin>
-            <plugin>
+     <!--       <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
                 <version>5.4.0</version>
@@ -59,7 +59,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 

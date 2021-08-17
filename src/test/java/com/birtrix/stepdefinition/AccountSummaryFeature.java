@@ -13,6 +13,7 @@ import java.util.List;
 public class AccountSummaryFeature {
     @Given("user is log in into zero bank account")
     public void user_is_log_in_into_zero_bank_account() {
+        BrowserUitls.sleep(1);
         Pages.getZero_logn().signinButton.click();
         Zero_logn.Login();
 

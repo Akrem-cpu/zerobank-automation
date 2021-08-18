@@ -3,6 +3,7 @@ package com.birtrix.page;
 import com.birtrix.utilites.ConfiReader;
 import com.birtrix.utilites.Driver;
 import com.birtrix.utilites.Pages;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

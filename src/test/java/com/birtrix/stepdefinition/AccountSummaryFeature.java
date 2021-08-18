@@ -12,7 +12,8 @@ import java.util.List;
 
 public class AccountSummaryFeature {
     @Given("user is log in into zero bank account")
-    public void user_is_log_in_into_zero_bank_account() {
+    public synchronized void user_is_log_in_into_zero_bank_account() {
+        BrowserUitls.sleep(1);
         if( Pages.getZero_logn().signinButton.isDisplayed()){
             Pages.getZero_logn().signinButton.click();
         }

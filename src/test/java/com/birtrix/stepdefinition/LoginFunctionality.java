@@ -9,6 +9,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginFunctionality {
     @Given("user is on login page")
@@ -16,6 +17,7 @@ public class LoginFunctionality {
     }
     @Then("user give valid credential")
     public void user_give_valid_credential() {
+        BrowserUitls.waitFor().until(ExpectedConditions.visibilityOf(Pages.getZero_logn().signinButton));
         if(Pages.getZero_logn().signinButton.isDisplayed()){
             Pages.getZero_logn().signinButton.click();
         }

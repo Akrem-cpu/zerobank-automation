@@ -17,7 +17,6 @@ public class LoginFunctionality {
     }
     @Then("user give valid credential")
     public void user_give_valid_credential() {
-        BrowserUitls.waitFor().until(ExpectedConditions.visibilityOf(Pages.getZero_logn().signinButton));
         if(Pages.getZero_logn().signinButton.isDisplayed()){
             Pages.getZero_logn().signinButton.click();
         }

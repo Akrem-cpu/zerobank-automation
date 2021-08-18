@@ -3,6 +3,8 @@ package com.birtrix.utilites;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -44,6 +46,15 @@ public class Driver {
                     case "chrome":
                         WebDriverManager.chromedriver().setup();
                         driverPool.set(new ChromeDriver());
+                        driverPool.get().manage().window().maximize();
+                        driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                        break;
+                    case "chromeSSL":
+                        WebDriverManager.chromedriver().setup();
+                        ChromeOptions capability = new ChromeOptions();
+                        capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+                        capability.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+                        driverPool.set(new ChromeDriver(capability));
                         driverPool.get().manage().window().maximize();
                         driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                         break;

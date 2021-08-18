@@ -14,10 +14,29 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class A {
+public class A<T extends Number>{
+    T ob;
+    public A(T ob){
+        this.ob = ob;
+    }
+    public boolean equals1(A<?> a,A<?> c){
+        if(a.ob.intValue() == c.ob.intValue()){
+            return true;
+        }
+        return false;
+    }
+
+
+
     public static void main(String[] args) {
+        A<Integer> list = new A<>(1);
+        A<Integer> list2 = new A<>(10);
+        System.out.println("list.equals1(list2,list) = " + list.equals1(list2, list));
+
+
         int[] a = {1,2,3,0,0,0,1,3};
-       Object[] c =  zero(a);
+
+
 
         Map<String,Object> map = new LinkedHashMap<>();
 
@@ -86,9 +105,10 @@ public class A {
 
 
 
-    public static Object[] zero(int[] a ){
+    public static Object[] zero(int[] a){
         List<Integer> list = Arrays.stream(a).filter(p-> p==0).boxed().collect(Collectors.toList());
         list.addAll(Arrays.stream(a).filter(p-> p!=0).boxed().collect(Collectors.toList()));
+
         return list.toArray();
     }
 

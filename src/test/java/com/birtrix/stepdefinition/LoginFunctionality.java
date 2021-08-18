@@ -29,10 +29,6 @@ public class LoginFunctionality {
     }
     @Then("user should see title as {string}")
     public void user_should_see_title_as(String string) {
-        WebElement a = Driver.getDriver().findElement(By.xpath("//button[@id='details-button']"));
-        WebElement b = Driver.getDriver().findElement(By.xpath("//a[@id='proceed-link']"));
-        a.click();
-        b.click();
         BrowserUitls.titleAssert(string);
     }
 

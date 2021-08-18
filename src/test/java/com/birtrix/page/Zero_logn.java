@@ -50,10 +50,7 @@ public class Zero_logn extends ALlPages {
         Pages.getZero_logn().usernameBox.sendKeys(ConfiReader.getProperty("username"));
         Pages.getZero_logn().passwordBox.sendKeys("password");
         Pages.getZero_logn().signInButton.click();
-        WebElement a = Driver.getDriver().findElement(By.xpath("//button[@id='details-button']"));
-        WebElement b = Driver.getDriver().findElement(By.xpath("//a[@id='proceed-link']"));
-        a.click();
-        b.click();
+
     }
 
 

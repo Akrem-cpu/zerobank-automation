@@ -5,7 +5,6 @@ import com.birtrix.utilites.BrowserUitls;
 import com.birtrix.utilites.Pages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 

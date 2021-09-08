@@ -58,6 +58,21 @@ public class Driver {
                         driverPool.get().manage().window().maximize();
                         driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                         break;
+                    case "RemoteChromeSSL":
+                        ChromeOptions chromeOptions = new ChromeOptions();
+                        chromeOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
+                        chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+                        try {
+                            URL url = new URL("url");
+                          driverPool.set(new RemoteWebDriver(url,new DesiredCapabilities()));
+                        } catch (MalformedURLException e) {
+                            e.printStackTrace();
+                        }
+                        driverPool.get().manage().window().maximize();
+                        driverPool.get().manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+
+
+
 
                 }
             }

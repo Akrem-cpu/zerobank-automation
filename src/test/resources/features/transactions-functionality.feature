@@ -26,4 +26,3 @@ Feature: Find Transactions in	Account	Activity
     But results table should not show descriptions containing "ONLINE"
 
 
-

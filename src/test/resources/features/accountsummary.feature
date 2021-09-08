@@ -4,7 +4,7 @@ Feature: Account	summary	page	should	have	the	title	Zero	– Account	summary.	Ac
   Accounts,	Credit	Accounts,	Loan	Accounts.	Credit	Accounts table	must	have	columns
   Account,	Credit	Card and	Balance.
   B204-356,B204-356
-  @wip
+  @B204-356 @B204-353 @wip
   Scenario: user should see this Cash Accounts, Investment Accounts, Credit	Accounts, Loan Accounts after user login
     Given user is log in into zero bank account
     Then user should see title "Zero - Account Summary"

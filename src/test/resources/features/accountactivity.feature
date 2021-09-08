@@ -1,15 +1,16 @@
-
+@wip
 Feature: Account Activity page should have the title Zero – Account activity. In the Account drop down default option
   should be Savings. Account drop down should have the following options: Savings, Checking, Loan, Credit Card, Brokerage.
   Transactions table should	have column	names Date,	Description, Deposit, Withdrawal.
   B204-354,	B204-355
-  @wip
+
+  @B204-354 @B204-353
   Scenario: user should see  Savings, Checking, Loan, Credit Card, Brokerage under account on account activity page
     Given user is log in into zero bank account
     When user click on "Account Activity"
     Then user should see title "Zero - Account Activity"
     Then user should see "Savings" as a by default on account dropdown
-
+  @B204-355 @B204-353
     Scenario: user should see all Savings, Checking, Loan, Credit Card, Brokerage option under account select dropdown
       Given user is log in into zero bank account
       Then  user click on "Account Activity"

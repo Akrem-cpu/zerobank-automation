@@ -1,11 +1,13 @@
 package com.birtrix.page;
 
 import com.birtrix.utilites.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PayBills extends ALlPages{
+public class PayBills implements b {
+
 
     public PayBills(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -27,3 +29,10 @@ public class PayBills extends ALlPages{
 
 
 }
+interface b{
+    String a = "hello";
+}
+
+
+
+
